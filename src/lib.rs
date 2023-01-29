@@ -298,4 +298,19 @@ pub mod hashmap {
             }
         }
     }
+
+    /// Merge recursively elements if the key is present in `left` and `right`.
+    pub fn intersection<K: Eq + Hash, V: crate::Merge>(
+        left: &mut HashMap<K, V>,
+        right: HashMap<K, V>,
+    ) {
+        use std::collections::hash_map::Entry;
+
+        for (k, v) in right {
+            match left.entry(k) {
+                Entry::Occupied(mut existing) => existing.get_mut().merge(v),
+                _ => {}
+            }
+        }
+    }
 }
