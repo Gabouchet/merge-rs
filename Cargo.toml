@@ -2,13 +2,13 @@
 # SPDX-License-Identifier: CC0-1.0
 
 [package]
-name = "merge"
+name = "merge-hashmap"
 version = "0.1.0"
-authors = ["Robin Krahl <robin.krahl@ireas.org>"]
+authors = ["Robin Krahl <robin.krahl@ireas.org>", "Gabriel Hamel <gabriel.hamel.pro@gmail.com>"]
 edition = "2018"
 description = "Merge multiple values into one"
 homepage = "https://sr.ht/~ireas/merge-rs"
-repository = "https://git.sr.ht/~ireas/merge-rs"
+repository = "https://github.com/Gabouchet/merge-rs"
 documentation = "https://docs.rs/merge"
 keywords = ["merge", "macros", "derive"]
 categories = ["rust-patterns"]
