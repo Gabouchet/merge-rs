@@ -2,9 +2,9 @@
 # SPDX-License-Identifier: CC0-1.0
 
 [package]
-name = "merge_derive"
+name = "merge_derive-hashmap"
 version = "0.1.1"
-authors = ["Robin Krahl <robin.krahl@ireas.org>"]
+authors = ["Robin Krahl <robin.krahl@ireas.org>", "Gabriel Hamel <gabriel.hamel.pro@gmail.com>"]
 edition = "2018"
 description = "Derive macro for the merge::Merge trait"
 repository = "https://git.sr.ht/~ireas/merge-rs/tree/master/merge_derive"
