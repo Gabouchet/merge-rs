@@ -66,7 +66,7 @@ fn impl_merge_for_struct(
     let assignments = gen_assignments(fields, default_strategy);
 
     quote! {
-        impl ::merge::Merge for #name {
+        impl ::merge_hashmap::Merge for #name {
             fn merge(&mut self, other: Self) {
                 #assignments
             }
