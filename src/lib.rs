@@ -75,7 +75,7 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 
 #[cfg(feature = "derive")]
-pub use merge_derive::*;
+pub use merge_derive_hashmap::*;
 
 /// A trait for objects that can be merged.
 ///
